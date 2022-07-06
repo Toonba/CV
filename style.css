@@ -1,0 +1,167 @@
+body{
+    background-color: bisque;
+}
+
+#blocPage{
+    width: 80%;
+    margin:auto;
+    margin-top:12%;
+    padding-bottom: 50px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#Ape{
+    border: 2px solid brown;
+    margin-top: 15px;
+    margin-left: 45.3%;
+    margin-bottom: -10px;
+}
+/*mise en forme */
+table {
+    margin:auto;
+    border-collapse:collapse;
+}
+
+#supGauche {
+    height:40px;
+    border-right: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+#supDroit {
+    height:40px;
+    border-left: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+#infGauche {
+    height:40px;
+    border-right: 2px solid brown;
+    border-top: 2px solid brown;
+}
+#infDroit {
+    height:40px;
+    border-left: 2px solid brown;
+    border-top: 2px solid brown;
+} 
+
+#milieu {
+    padding-top:0px;
+}
+
+#introduction {
+    margin-top:25px;
+    margin-bottom: 35px;
+}
+
+h1,p 
+{
+    font-style: italic;
+    text-align: center;
+}
+
+/* barre de navigation */
+nav{
+    width:30%;
+    margin:auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding:0px;
+    margin-top:0px;
+}
+
+ul li {
+    list-style-type: none;
+    width:150px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li:hover {
+    width: 160px;
+    border-radius: 2px solid brown;
+    background-color: brown;
+    opacity: 0.5;
+}
+
+/* contenue du menu*/
+article {
+    display: none;
+    margin:auto;
+    position: relative;
+    padding: 2rem 2.5rem 1.5rem 2.5rem ;
+    width: 40rem;
+    max-width: 100%;
+    background-color: rgba(235, 99, 99, 0.85);
+    border-radius: 10px;
+    opacity: 1;
+    margin-bottom:20px;
+}
+
+
+
+
+article h2 {
+    width: 200px;
+    margin:auto;
+    text-align: center;
+    background-color: rgba(170, 62, 62, 0.85);
+    border: 2px solid rgba(170, 62, 62, 0.85);
+    border-radius: 20px;
+    opacity: 0.95;
+}
+/* mise en forme croix sur article*/
+.croix {
+    width:30px; 
+    height: 30px; 
+    cursor: pointer;
+    position:absolute;
+    top:15px;
+    right: 5px;
+
+}
+
+.croix:hover {
+    border-radius: 25px;
+    background-color: crimson;
+    opacity: 0.3;
+}
+
+.croix span {
+    display:block;
+    width: 100%;
+    height: 1px; 
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.croix span::before, .croix span::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.croix span::before {
+    transform: translateY(10px);
+    transform: rotateZ(-45deg);
+}
+
+.croix span::after {
+    transform: translateY(-10px);
+    transform: rotateZ(45deg);
+}
