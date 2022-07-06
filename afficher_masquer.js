@@ -31,3 +31,5 @@ function close1() {
   formation.style.display = "none";
 }
 croix.onclick = close1
+
+/* I have to work on this JS script to be able to make appears or disapears the article on my webpage*/
