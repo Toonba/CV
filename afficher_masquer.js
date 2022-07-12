@@ -22,12 +22,31 @@ document.getElementById('linkContacter').addEventListener('click', (e) => {
     document.getElementById("miseEnForme").style.visibility = "hidden";
 });
 
-/*
-Fermer l'article avec la croix
-document.getElementsByClassName('croix').[0].addEventListener('click', (e) => {
-    document.getElementById('formation').style.display = "none";
+
+//Fermer l'article avec la croix
+document.getElementsByClassName('croix')[0].addEventListener('click', (e) => {
+    document.getElementById('formation').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
 });
-*/
+
+document.getElementsByClassName('croix')[1].addEventListener('click', (e) => {
+    document.getElementById('experience').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+document.getElementsByClassName('croix')[2].addEventListener('click', (e) => {
+    document.getElementById('competence').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+document.getElementsByClassName('croix')[3].addEventListener('click', (e) => {
+    document.getElementById('contacter').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+
+
+
 
 
 /* I have to work on this JS script to be able to make appears or disapears the article on my webpage*/
