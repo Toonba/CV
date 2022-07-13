@@ -1,27 +1,52 @@
 //Afficher l'article formation quand on click sur le lien formation du nav 
 document.getElementById('linkFormation').addEventListener('click', (e) => {
-    document.getElementById("formation").style.display = "block";
+    document.getElementById("formation").classList.add("afficher");
+    document.getElementById("miseEnForme").style.visibility = "hidden";
 });
 
 //Afficher l'article Experience  quand on click sur le lien Experience  du nav 
 document.getElementById('linkExperience').addEventListener('click', (e) => {
-    document.getElementById("experience").style.display = "block";
+    document.getElementById("experience").classList.add("afficher");
+    document.getElementById("miseEnForme").style.visibility = "hidden";
 });
 
 //Afficher l'article Compétence quand on click sur le lien Compétence du nav 
 document.getElementById('linkCompetence').addEventListener('click', (e) => {
-    document.getElementById("competence").style.display = "block";
+    document.getElementById("competence").classList.add("afficher");
+    document.getElementById("miseEnForme").style.visibility = "hidden";
 });
 
 //Afficher l'article contacter quand on click sur le lien contacter du nav 
 document.getElementById('linkContacter').addEventListener('click', (e) => {
-    document.getElementById("contacter").style.display = "block";
+    document.getElementById("contacter").classList.add("afficher");
+    document.getElementById("miseEnForme").style.visibility = "hidden";
 });
 
+
 //Fermer l'article avec la croix
-document.getElementsById('croix1').addEventListener('click', (e) => {
-    document.getElementById('formation').style.display = "none";
+document.getElementsByClassName('croix')[0].addEventListener('click', (e) => {
+    document.getElementById('formation').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
 });
+
+document.getElementsByClassName('croix')[1].addEventListener('click', (e) => {
+    document.getElementById('experience').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+document.getElementsByClassName('croix')[2].addEventListener('click', (e) => {
+    document.getElementById('competence').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+document.getElementsByClassName('croix')[3].addEventListener('click', (e) => {
+    document.getElementById('contacter').classList.remove("afficher");
+    document.getElementById("miseEnForme").style.visibility = "visible";
+});
+
+
+
+
 
 
 /* I have to work on this JS script to be able to make appears or disapears the article on my webpage*/
