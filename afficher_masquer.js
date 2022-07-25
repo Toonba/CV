@@ -2,13 +2,13 @@
 document.getElementById('linkFormation').addEventListener('click', (e) => {
     document.getElementById("formation").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
-
 });
 
 //Afficher l'article Experience  quand on click sur le lien Experience  du nav 
 document.getElementById('linkExperience').addEventListener('click', (e) => {
     document.getElementById("experience").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
+    document.getElementsById("background").style.filter = "blur(20px)";
 });
 
 //Afficher l'article Compétence quand on click sur le lien Compétence du nav 

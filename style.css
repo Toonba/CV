@@ -1,3 +1,18 @@
+/*Header*/
+
+header {
+    width: 100%;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    border-bottom: 2px solid brown;
+}
+#background {
+    width: 60%;
+    display:flex;
+    justify-content:space-around;
+}
+
 /*Layout*/
 body{
     background-color: bisque;
@@ -7,7 +22,7 @@ body{
 #blocPage{
     width: 100%;
     margin:auto;
-    margin-top:12%;
+    margin-top:8%;
     padding-bottom: 50px;
 }
 
@@ -86,7 +101,7 @@ nav ul li {
 
 }
 
-a{
+nav a{
     text-decoration: none;
     color:black;
 }
@@ -119,7 +134,6 @@ article {
     border-radius: 10px;
     margin-bottom:20px;
     transform: translateY(-30rem);
-
 }
 
 h2 {
@@ -190,4 +204,120 @@ article ul {
 .croix span::after {
     transform: translateY(-10px);
     transform: rotateZ(45deg);
+}
+
+/* skill's bar*/
+
+#skillBar {
+    margin-top: 25px;
+}
+
+#skillBar p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#adap {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#adap::before {
+    content:'';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
+}
+
+#auto {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#auto::before {
+    content:'';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
+}
+#org {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#org::before {
+    content:'';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
+}
+#reac {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#reac::before {
+    content:'';
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
+}
+#ang {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#ang::before {
+    content:'';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
+}
+
+#curi {
+    display:block;
+    background-color: rgba(109, 40, 40, 0.85);
+    width: 40%;
+    height: 5px; 
+    margin: 5px 180px 5px;
+    border-radius: 2px;
+}
+
+#curi::before {
+    content:'';
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    background-color: azure;
+    border-radius: 2px;
 }
