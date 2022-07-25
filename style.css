@@ -1,19 +1,20 @@
-/*Mis en page */
+/*Layout*/
 body{
     background-color: bisque;
+
 }
 
 #blocPage{
-    width: 80%;
+    width: 100%;
     margin:auto;
     margin-top:12%;
     padding-bottom: 50px;
 }
 
-#Ape{
+#photo{
     border: 2px solid brown;
     margin-top: 15px;
-    margin-left: 45.3%;
+    margin-left: 46%;
     margin-bottom: -10px;
 }
 
@@ -27,6 +28,7 @@ table {
     border-right: 2px solid brown;
     border-bottom: 2px solid brown;
 }
+
 #supDroit {
     height:40px;
     border-left: 2px solid brown;
@@ -90,13 +92,17 @@ a{
 }
 
 nav li:hover {
-    width: 160px;
+    width: 150px;
     border-radius: 2px solid brown;
     background-color: brown;
     opacity: 0.5;
+    font
 }
 
 /* contenue du menu*/
+#main {position:relative;
+}
+
 article {
     display: none;
 }
@@ -104,14 +110,16 @@ article {
 .afficher {
     display:block;
     margin:auto;
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top:0;
+    left: 31.5%;
     padding: 2rem 2.5rem 1.5rem 2.5rem ;
     width: 40rem;
-    max-width: 100%;
     background-color: rgba(235, 99, 99, 0.85);
     border-radius: 10px;
     margin-bottom:20px;
+    transform: translateY(-30rem);
+
 }
 
 h2 {
