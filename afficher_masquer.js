@@ -1,52 +1,60 @@
-//Afficher l'article formation quand on click sur le lien formation du nav 
+//show article "Formation" when clicking on "formation" on the nav link
 document.getElementById('linkFormation').addEventListener('click', (e) => {
     document.getElementById("formation").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
+    document.getElementById("header").classList.add("masquerHeader");
+
 });
 
-//Afficher l'article Experience  quand on click sur le lien Experience  du nav 
+//show article "Expérience" when clicking on "Expérience" on the nav link
 document.getElementById('linkExperience').addEventListener('click', (e) => {
     document.getElementById("experience").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
-    document.getElementsById("background").style.filter = "blur(20px)";
+    document.getElementById("header").classList.add("masquerHeader");
 });
 
-//Afficher l'article Compétence quand on click sur le lien Compétence du nav 
+//show article "compétence" when clicking on "compétence" on the nav link
 document.getElementById('linkCompetence').addEventListener('click', (e) => {
     document.getElementById("competence").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
+    document.getElementById("header").classList.add("masquerHeader");
 });
 
-//Afficher l'article contacter quand on click sur le lien contacter du nav 
+//show article "contacter" when clicking on "Me contacter" on the nav link
 document.getElementById('linkContacter').addEventListener('click', (e) => {
     document.getElementById("contacter").classList.add("afficher");
     document.getElementById("miseEnForme").style.filter = "blur(20px)";
+    document.getElementById("header").classList.add("masquerHeader");
 });
 
 
-//Fermer l'article avec la croix
+//Close article with the cross 
 document.getElementsByClassName('croix')[0].addEventListener('click', (e) => {
     document.getElementById('formation').classList.remove("afficher");
     document.getElementById("miseEnForme").style.visibility = "visible";
-    document.getElementById("miseEnForme").style.filter = "blur(0px)"
+    document.getElementById("miseEnForme").style.filter = "blur(0px)";
+    document.getElementById("header").classList.remove("masquerHeader");
 });
 
 document.getElementsByClassName('croix')[1].addEventListener('click', (e) => {
     document.getElementById('experience').classList.remove("afficher");
     document.getElementById("miseEnForme").style.visibility = "visible";
-    document.getElementById("miseEnForme").style.filter = "blur(0px)"
+    document.getElementById("miseEnForme").style.filter = "blur(0px)";
+    document.getElementById("header").classList.remove("masquerHeader");
 });
 
 document.getElementsByClassName('croix')[2].addEventListener('click', (e) => {
     document.getElementById('competence').classList.remove("afficher");
     document.getElementById("miseEnForme").style.visibility = "visible";
-    document.getElementById("miseEnForme").style.filter = "blur(0px)"
+    document.getElementById("miseEnForme").style.filter = "blur(0px)";
+    document.getElementById("header").classList.remove("masquerHeader");
 });
 
 document.getElementsByClassName('croix')[3].addEventListener('click', (e) => {
     document.getElementById('contacter').classList.remove("afficher");
     document.getElementById("miseEnForme").style.visibility = "visible";
-    document.getElementById("miseEnForme").style.filter = "blur(0px)"
+    document.getElementById("miseEnForme").style.filter = "blur(0px)";
+    document.getElementById("header").classList.remove("masquerHeader");
 });
 
 

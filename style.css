@@ -12,6 +12,9 @@ header {
     display:flex;
     justify-content:space-around;
 }
+.masquerHeader {
+    display: none;
+}
 
 /*Layout*/
 body{
@@ -213,12 +216,10 @@ article ul {
 }
 
 #skillBar p {
-    text-align: center;
     margin-top: 5px;
 }
 
 #adap {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
@@ -236,7 +237,6 @@ article ul {
 }
 
 #auto {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
@@ -253,7 +253,6 @@ article ul {
     border-radius: 2px;
 }
 #org {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
@@ -270,7 +269,6 @@ article ul {
     border-radius: 2px;
 }
 #reac {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
@@ -287,7 +285,6 @@ article ul {
     border-radius: 2px;
 }
 #ang {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
@@ -305,7 +302,6 @@ article ul {
 }
 
 #curi {
-    display:block;
     background-color: rgba(109, 40, 40, 0.85);
     width: 40%;
     height: 5px; 
