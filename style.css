@@ -142,6 +142,7 @@ article {
 h2 {
     width: 200px;
     margin:auto;
+    margin-bottom: 25px;
     text-align: center;
     background-color: rgba(170, 62, 62, 0.85);
     border: 2px solid rgba(170, 62, 62, 0.85);
@@ -316,4 +317,68 @@ article ul {
     height: 5px;
     background-color: azure;
     border-radius: 2px;
+}
+
+/*layout form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.groupe {
+    display:flex;
+    flex-direction: column;
+}
+
+.identity {
+    display:flex;
+    flex-direction: column;
+    margin: 5px 25px 5px 0px;
+}
+
+#identity {
+    display:flex;
+
+}
+
+input, select, textarea {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 2px 2px 5px;
+    margin:10px 0px 10px 0px;
+    outline-color: brown;
+}
+
+select {
+    width: 52%;
+    text-align: center;
+}
+
+input[type=email]{
+    width: 50%;
+}
+
+textarea {
+    max-width: 80%;
+    width: 50%;
+}
+
+input[type=submit] {
+    width:25%;
+    height: 35px;
+    margin-left: 145px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 5px 0px 5px 0px;
+    border-radius: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: brown;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
 }

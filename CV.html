@@ -10,7 +10,7 @@
         <div id="background">
             <p> <a href="tel:+33682583283"> <img src="phone_icone-removebg-preview (1).png"></a></p>
             <p> <a href="mailto:aymerickbatlogg@gmail.com"><img src="mail-removebg-preview (1).png"></a></p>
-            <p> <a href="https://www.linkedin.com/in/aymerick-batlogg-0b9692a1/?originalSubdomain=fr"><img src="linkedin (1).png"> </a></p>
+            <p> <a href="https://www.linkedin.com/in/aymerick-batlogg-0b9692a1/?originalSubdomain=fr"><img src="linkedin.png"> </a></p>
             <p> <a href="https://github.com/Toonba"> <img src="github.png"> </a></p>
         </div>
     </header>
@@ -127,10 +127,42 @@
             <article id="contacter">
                 <h2>Me contacter</h2>
                 <form method="post" action="traitement.php">
-                    <p>
-                        <label for="date">la date et l'heure:</label>
-                        <input type="datetime" name="date" id="date" size="30" />
-                    </p>
+
+                    <div id="identity">
+                        <div class="identity">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" id="prenom" placeholder="John"/>
+                        </div>
+                        <div class="identity">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" id="nom" placeholder="Smith"/>
+                        </div>
+                    </div>
+
+                    <div class="groupe">
+                        <label for="profession">Vous êtes : </label>
+                        <select name="profession" id="profession">
+                            <option value="">--Choisissez une option--</option>
+                            <option value="Start-up">Une Start-up</option>
+                            <option value="TPE-PME">Une TPE-PME</option>
+                            <option value="grand-groupe">Un grand groupe</option>
+                            <option value="particulier">Un particulier</option>
+                        </select>
+                    </div>
+
+                    <div class="groupe">
+                        <label for="email">e-mail :</label>
+                        <input type="email" name="email" id="email" required placeholder="john.smith@gmail.com"/>
+                    </div>
+
+                    <div class="groupe">
+                        <label for="request">Votre demande :</label>
+                        <textarea name="request" id="request" placeholder="Comment puis-je vous aider ?"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" />
+                    </div>
                 </form>
                 <div class="croix">
                     <span></span>
